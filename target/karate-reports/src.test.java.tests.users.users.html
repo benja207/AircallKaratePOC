@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.users.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-18 08:06:49 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>get api_string and check if its correct</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Get users</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:44]"><span>[3:44]</span> <span>Create an user that already exists</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:65]"><span>[4:65]</span> <span>Create a new user, modify and delete it</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:116]"><span>[5:116]</span> <span>Retrieve list of users availability</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:139]"><span>[6:139]</span> <span>Start a call, at this moment, I cant find the number_id associated to the phone number, so it&#39;s failing</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[7:151]"><span>[7:151]</span> <span>Dial a phone number, it&#39;s failing because the user is unavailable</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Check users related API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">get api_string and check if its correct</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1178</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:39.997 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/ping&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1174</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">20:06:40.287 request:
+1 &gt; GET https://api.aircall.io/v1/ping
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:06:41.197 response time in milliseconds: 886
+1 &lt; 200
+1 &lt; Date: Sun, 18 Jul 2021 18:06:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; ETag: W/&quot;333b4140438f287af91da2a6ab49ae38&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: a2ab9b6b-410d-4bba-ad42-90e9f41ce9d9
+1 &lt; X-Runtime: 0.012422
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;ping&quot;:&quot;pong&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Get users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>903</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:41.202 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">883</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">20:06:41.205 request:
+1 &gt; GET https://api.aircall.io/v1/users
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:06:42.085 response time in milliseconds: 871
+1 &lt; 200
+1 &lt; Date: Sun, 18 Jul 2021 18:06:42 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; ETag: W/&quot;e21d9f955db2283bae9c41161df7ecc5&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: 6850ae87-b953-4640-ac6d-962c4ea97e47
+1 &lt; X-Runtime: 0.044127
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;meta&quot;:{&quot;per_page&quot;:20,&quot;total&quot;:109,&quot;previous_page_link&quot;:null,&quot;count&quot;:20,&quot;current_page&quot;:1,&quot;next_page_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users?order=asc&amp;page=2&amp;per_page=20&quot;},&quot;users&quot;:[{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Tyreek Rojas&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2019-07-09T14:26:22.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:290082,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/290082&quot;,&quot;email&quot;:&quot;maxime+technicaltest@aircall.io&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:300,&quot;name&quot;:&quot;Jimmyyy Lyyyy&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2019-12-09T11:54:49.000Z&quot;,&quot;language&quot;:&quot;fr-FR&quot;,&quot;id&quot;:347585,&quot;time_zone&quot;:&quot;America\/Mazatlan&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/347585&quot;,&quot;email&quot;:&quot;deagleizer@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;QA tester&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-02-25T09:25:45.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:373675,&quot;time_zone&quot;:&quot;Europe\/Paris&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/373675&quot;,&quot;email&quot;:&quot;qa+test@aircall.io&quot;},{&quot;availability_status&quot;:&quot;unavailable&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Pournima Tele&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-04-29T15:09:47.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:404602,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/404602&quot;,&quot;email&quot;:&quot;pournima.csm@gmail.com&quot;},{&quot;availability_status&quot;:&quot;custom&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Julius Mong&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-05-25T09:26:35.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:413614,&quot;time_zone&quot;:&quot;Europe\/London&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/413614&quot;,&quot;email&quot;:&quot;jmong@perforce.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Riabinina Hanna&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-07-15T14:09:56.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:437138,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/437138&quot;,&quot;email&quot;:&quot;riabinina.hanna@outlook.com&quot;},{&quot;availability_status&quot;:&quot;unavailable&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Adama OUEDRAOGO&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-07-20T14:39:11.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:438830,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/438830&quot;,&quot;email&quot;:&quot;demsyadama@yahoo.fr&quot;},{&quot;availability_status&quot;:&quot;custom&quot;,&quot;wrap_up_time&quot;:300,&quot;name&quot;:&quot;Tamish Aren&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-07-28T10:01:02.000Z&quot;,&quot;language&quot;:&quot;es-ES&quot;,&quot;id&quot;:441719,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/441719&quot;,&quot;email&quot;:&quot;tamisharen@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Prateek Agarwal&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-08-04T15:00:38.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:444292,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/444292&quot;,&quot;email&quot;:&quot;agarwal.prateek8@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Dipika Vijaykumar&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-08-12T08:33:01.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:447300,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/447300&quot;,&quot;email&quot;:&quot;dipikasankar21@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Nur Sener&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-09-14T16:10:38.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:460532,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/460532&quot;,&quot;email&quot;:&quot;nrsener@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Angel Martin Paz&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-11-12T11:38:02.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:497117,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/497117&quot;,&quot;email&quot;:&quot;contedalmamelone@gmail.com&quot;},{&quot;availability_status&quot;:&quot;custom&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Slim Zouari&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-11-27T10:39:19.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:506852,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/506852&quot;,&quot;email&quot;:&quot;slim.zouari@outlook.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Pablo Lloret Roig&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-12-15T00:48:19.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:517551,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/517551&quot;,&quot;email&quot;:&quot;yeticanin@hotmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Tatiana Arpintin&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-12-15T13:46:57.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:517769,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/517769&quot;,&quot;email&quot;:&quot;tatyarpintin@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Alejandro Sanchez Ballester&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2020-12-15T14:03:42.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:517777,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/517777&quot;,&quot;email&quot;:&quot;aplierxo@hotmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Roberto Carballo&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2021-01-06T17:17:41.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:525014,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/525014&quot;,&quot;email&quot;:&quot;rbcarballo@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Remzi ER&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2021-02-01T09:24:50.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:539731,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/539731&quot;,&quot;email&quot;:&quot;remzier4233@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Samuel De la cruz lopez&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2021-02-01T09:29:38.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:539734,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/539734&quot;,&quot;email&quot;:&quot;samudelacruz@gmail.com&quot;},{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Martin Svach&quot;,&quot;available&quot;:false,&quot;created_at&quot;:&quot;2021-02-15T13:20:36.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:548912,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/548912&quot;,&quot;email&quot;:&quot;kwakic@gmail.com&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.meta ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.16">{
+  &quot;per_page&quot;: &quot;#number&quot;,
+  &quot;total&quot;: &quot;#number&quot;,
+  &quot;previous_page_link&quot;: null,
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;current_page&quot;: &quot;#number&quot;,
+  &quot;next_page_link&quot;: &quot;#string&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.users  ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.28">{
+		&quot;availability_status&quot;: &quot;#string&quot;,
+		&quot;wrap_up_time&quot;: &quot;#number&quot;,
+		&quot;name&quot;: &quot;#string&quot;,
+		&quot;available&quot;: &quot;#boolean&quot;,
+		&quot;created_at&quot;: &quot;#string&quot;,
+		&quot;language&quot;: &quot;#string&quot;,
+		&quot;id&quot;: &quot;#number&quot;,
+		&quot;time_zone&quot;: &quot;#string&quot;,
+		&quot;direct_link&quot;: &quot;#string&quot;,
+		&quot;email&quot;: &quot;#string&quot;
+         }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:44]</span>
+                <span class="scenario-name">Create an user that already exists</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>931</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:42.110 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.46">{
+  &quot;email&quot;: &quot;benjamin@aircall.com&quot;,
+  &quot;first_name&quot;: &quot;Benjamin&quot;,
+  &quot;last_name&quot;: &quot;San Miguel&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">931</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.54">20:06:42.141 request:
+1 &gt; POST https://api.aircall.io/v1/users
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 81
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;last_name&quot;:&quot;San Miguel&quot;,&quot;first_name&quot;:&quot;Benjamin&quot;,&quot;email&quot;:&quot;benjamin@aircall.com&quot;}
+
+20:06:43.042 response time in milliseconds: 898
+1 &lt; 400
+1 &lt; Date: Sun, 18 Jul 2021 18:06:43 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: b885bcb1-5a67-43df-a584-7c0def36e693
+1 &lt; X-Runtime: 0.020109
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;troubleshoot&quot;:&quot;A user has already been created with this email&quot;,&quot;error&quot;:&quot;Bad request&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.57">{
+    &quot;troubleshoot&quot;: &quot;#string&quot;,
+    &quot;error&quot;: &quot;#string&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:65]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:65]</span>
+                <span class="scenario-name">Create a new user, modify and delete it</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3650</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:65]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:43.046 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.68">{
+  &quot;email&quot;: &quot;aircatrwqell@qwdes.aircall&quot;,
+  &quot;first_name&quot;: &quot;Benjamin&quot;,
+  &quot;last_name&quot;: &quot;SanMiguel&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1561</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.76">20:06:43.050 request:
+1 &gt; POST https://api.aircall.io/v1/users
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 86
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;last_name&quot;:&quot;SanMiguel&quot;,&quot;first_name&quot;:&quot;Benjamin&quot;,&quot;email&quot;:&quot;aircatrwqell@qwdes.aircall&quot;}
+
+20:06:44.608 response time in milliseconds: 1555
+1 &lt; 201
+1 &lt; Date: Sun, 18 Jul 2021 18:06:44 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; ETag: W/&quot;02373ed1eb15f741b544fbe39a992514&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: af7cf859-00fe-4b59-9e24-2f07a68ab578
+1 &lt; X-Runtime: 0.737288
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;user&quot;:{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Benjamin SanMiguel&quot;,&quot;available&quot;:false,&quot;numbers&quot;:[],&quot;created_at&quot;:&quot;2021-07-18T18:06:44.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:620739,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/620739&quot;,&quot;email&quot;:&quot;aircatrwqell@qwdes.aircall&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.78">{
+  &quot;user&quot;: {
+    &quot;id&quot;: &quot;#number&quot;,
+    &quot;direct_link&quot;: &quot;#string&quot;,
+    &quot;name&quot;: &quot;#string&quot;,
+    &quot;email&quot;: &quot;#string&quot;,
+    &quot;available&quot;: &quot;#boolean&quot;,
+    &quot;availability_status&quot;: &quot;#string&quot;,
+    &quot;created_at&quot;: &quot;#string&quot;,
+    &quot;time_zone&quot;: &quot;#string&quot;,
+    &quot;language&quot;: &quot;#string&quot;,
+    &quot;numbers&quot;: [],
+    &quot;wrap_up_time&quot;: &quot;#number&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = response.user.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/&#39;+userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.100">{
+      &quot;first_name&quot;: &quot;Ben Updated&quot;,
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">956</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.107">20:06:44.621 request:
+2 &gt; PUT https://api.aircall.io/v1/users/620739
+2 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 28
+2 &gt; Host: api.aircall.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;first_name&quot;:&quot;Ben Updated&quot;}
+
+20:06:45.573 response time in milliseconds: 949
+2 &lt; 200
+2 &lt; Date: Sun, 18 Jul 2021 18:06:45 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Server: nginx
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Download-Options: noopen
+2 &lt; X-Permitted-Cross-Domain-Policies: none
+2 &lt; Referrer-Policy: strict-origin-when-cross-origin
+2 &lt; ETag: W/&quot;eb3bcda1fba304ff7c06ccd11c4e2cd7&quot;
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; X-Request-Id: 7896ae20-a795-4103-8da0-4ef876e9876f
+2 &lt; X-Runtime: 0.125754
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 &lt; Vary: Origin
+{&quot;user&quot;:{&quot;availability_status&quot;:&quot;available&quot;,&quot;wrap_up_time&quot;:0,&quot;name&quot;:&quot;Ben Updated SanMiguel&quot;,&quot;available&quot;:false,&quot;numbers&quot;:[],&quot;created_at&quot;:&quot;2021-07-18T18:06:44.000Z&quot;,&quot;language&quot;:&quot;en-US&quot;,&quot;id&quot;:620739,&quot;time_zone&quot;:&quot;Etc\/UTC&quot;,&quot;direct_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/620739&quot;,&quot;email&quot;:&quot;aircatrwqell@qwdes.aircall&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.user.name == &quot;Ben Updated SanMiguel&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/&#39;+userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1123</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.113">20:06:45.576 request:
+3 &gt; DELETE https://api.aircall.io/v1/users/620739
+3 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+3 &gt; Host: api.aircall.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+20:06:46.697 response time in milliseconds: 1118
+3 &lt; 204
+3 &lt; Date: Sun, 18 Jul 2021 18:06:46 GMT
+3 &lt; Connection: keep-alive
+3 &lt; Server: nginx
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Download-Options: noopen
+3 &lt; X-Permitted-Cross-Domain-Policies: none
+3 &lt; Referrer-Policy: strict-origin-when-cross-origin
+3 &lt; Cache-Control: no-cache
+3 &lt; X-Request-Id: 863a6b9d-087e-4154-ad31-06e5da252382
+3 &lt; X-Runtime: 0.307421
+3 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+3 &lt; Vary: Origin
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:116]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:116]</span>
+                <span class="scenario-name">Retrieve list of users availability</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>778</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:116]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:116]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:46.703 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/availabilities&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">774</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.118">20:06:46.707 request:
+1 &gt; GET https://api.aircall.io/v1/users/availabilities
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:06:47.477 response time in milliseconds: 765
+1 &lt; 200
+1 &lt; Date: Sun, 18 Jul 2021 18:06:47 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; ETag: W/&quot;3df7dcdf0b64906b9782e0c28f13c2ad&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: 51649c28-a4ce-4661-a5e4-22c25f64a257
+1 &lt; X-Runtime: 0.036350
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;meta&quot;:{&quot;per_page&quot;:20,&quot;total&quot;:109,&quot;previous_page_link&quot;:null,&quot;count&quot;:20,&quot;current_page&quot;:1,&quot;next_page_link&quot;:&quot;https:\/\/api.aircall.io\/v1\/users\/availabilities?order=asc&amp;page=2&amp;per_page=20&quot;},&quot;users&quot;:[{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:290082},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:347585},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:373675},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:404602},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:413614},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:437138},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:438830},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:441719},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:444292},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:447300},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:460532},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:497117},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:506852},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:517551},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:517769},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:517777},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:525014},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:539731},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:539734},{&quot;availability&quot;:&quot;offline&quot;,&quot;id&quot;:548912}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref passed">119</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.meta ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.120">{
+  &quot;per_page&quot;: &quot;#number&quot;,
+  &quot;total&quot;: &quot;#number&quot;,
+  &quot;previous_page_link&quot;: null,
+  &quot;count&quot;: &quot;#number&quot;,
+  &quot;current_page&quot;: &quot;#number&quot;,
+  &quot;next_page_link&quot;: &quot;#string&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response.users  ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.131">{
+  &quot;availability&quot; : &quot;#string&quot;,
+  &quot;id&quot; : &quot;#number&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:139]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:139]</span>
+                <span class="scenario-name">Start a call, at this moment, I cant find the number_id associated to the phone number, so it&#39;s failing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>847</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:139]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:47.487 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/620665/calls&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.141">{
+  &quot;number_id&quot;: null,
+  &quot;to&quot;: &quot;+33652556756&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">846</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.148">20:06:47.492 request:
+1 &gt; POST https://api.aircall.io/v1/users/620665/calls
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;number_id&quot;:null,&quot;to&quot;:&quot;+33652556756&quot;}
+
+20:06:48.334 response time in milliseconds: 840
+1 &lt; 400
+1 &lt; Date: Sun, 18 Jul 2021 18:06:48 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: dc69d9e3-f419-4df5-b973-0f6e4cc8e9f8
+1 &lt; X-Runtime: 0.009243
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;troubleshoot&quot;:&quot;You must provide a number_id&quot;,&quot;error&quot;:&quot;Bad request&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref failed">149</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.149">20:06:48.336 src/test/java/tests/users/users.feature:149
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 840, url: https://api.aircall.io/v1/users/620665/calls, response: 
+{&quot;error&quot;:&quot;Bad request&quot;,&quot;troubleshoot&quot;:&quot;You must provide a number_id&quot;}
+src/test/java/tests/users/users.feature:149
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:151]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:151]</span>
+                <span class="scenario-name">Dial a phone number, it&#39;s failing because the user is unavailable</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>891</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:151]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:151]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:06:48.340 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/620665/dial&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.153">{
+   &quot;to&quot;: &quot;+33652556756&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">891</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.159">20:06:48.343 request:
+1 &gt; POST https://api.aircall.io/v1/users/620665/dial
+1 &gt; Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 21
+1 &gt; Host: api.aircall.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;to&quot;:&quot;+33652556756&quot;}
+
+20:06:49.232 response time in milliseconds: 887
+1 &lt; 405
+1 &lt; Date: Sun, 18 Jul 2021 18:06:49 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: 42d64299-e9df-4ac2-ad83-9fef3bbb2b78
+1 &lt; X-Runtime: 0.021630
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Origin
+{&quot;troubleshoot&quot;:&quot;The user is currently unavailable&quot;,&quot;error&quot;:&quot;Method not allowed&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.160">
+      <div class="step-ref failed">160</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.160">20:06:49.234 src/test/java/tests/users/users.feature:160
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 887, url: https://api.aircall.io/v1/users/620665/dial, response: 
+{&quot;error&quot;:&quot;Method not allowed&quot;,&quot;troubleshoot&quot;:&quot;The user is currently unavailable&quot;}
+src/test/java/tests/users/users.feature:160
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

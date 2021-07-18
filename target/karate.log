@@ -1,0 +1,285 @@
+20:06:39.201 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.0.1
+20:06:39.355 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:06:39.995 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:40.286 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET https://api.aircall.io/v1/ping
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:06:41.193 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 886
+1 < 200
+1 < Date: Sun, 18 Jul 2021 18:06:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < ETag: W/"333b4140438f287af91da2a6ab49ae38"
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < X-Request-Id: a2ab9b6b-410d-4bba-ad42-90e9f41ce9d9
+1 < X-Runtime: 0.012422
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"ping":"pong"}
+20:06:41.202 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:41.204 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET https://api.aircall.io/v1/users
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:06:42.078 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 871
+1 < 200
+1 < Date: Sun, 18 Jul 2021 18:06:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < ETag: W/"e21d9f955db2283bae9c41161df7ecc5"
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < X-Request-Id: 6850ae87-b953-4640-ac6d-962c4ea97e47
+1 < X-Runtime: 0.044127
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"meta":{"per_page":20,"total":109,"previous_page_link":null,"count":20,"current_page":1,"next_page_link":"https:\/\/api.aircall.io\/v1\/users?order=asc&page=2&per_page=20"},"users":[{"availability_status":"available","wrap_up_time":0,"name":"Tyreek Rojas","available":false,"created_at":"2019-07-09T14:26:22.000Z","language":"en-US","id":290082,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/290082","email":"maxime+technicaltest@aircall.io"},{"availability_status":"available","wrap_up_time":300,"name":"Jimmyyy Lyyyy","available":false,"created_at":"2019-12-09T11:54:49.000Z","language":"fr-FR","id":347585,"time_zone":"America\/Mazatlan","direct_link":"https:\/\/api.aircall.io\/v1\/users\/347585","email":"deagleizer@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"QA tester","available":false,"created_at":"2020-02-25T09:25:45.000Z","language":"en-US","id":373675,"time_zone":"Europe\/Paris","direct_link":"https:\/\/api.aircall.io\/v1\/users\/373675","email":"qa+test@aircall.io"},{"availability_status":"unavailable","wrap_up_time":0,"name":"Pournima Tele","available":false,"created_at":"2020-04-29T15:09:47.000Z","language":"en-US","id":404602,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/404602","email":"pournima.csm@gmail.com"},{"availability_status":"custom","wrap_up_time":0,"name":"Julius Mong","available":false,"created_at":"2020-05-25T09:26:35.000Z","language":"en-US","id":413614,"time_zone":"Europe\/London","direct_link":"https:\/\/api.aircall.io\/v1\/users\/413614","email":"jmong@perforce.com"},{"availability_status":"available","wrap_up_time":0,"name":"Riabinina Hanna","available":false,"created_at":"2020-07-15T14:09:56.000Z","language":"en-US","id":437138,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/437138","email":"riabinina.hanna@outlook.com"},{"availability_status":"unavailable","wrap_up_time":0,"name":"Adama OUEDRAOGO","available":false,"created_at":"2020-07-20T14:39:11.000Z","language":"en-US","id":438830,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/438830","email":"demsyadama@yahoo.fr"},{"availability_status":"custom","wrap_up_time":300,"name":"Tamish Aren","available":false,"created_at":"2020-07-28T10:01:02.000Z","language":"es-ES","id":441719,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/441719","email":"tamisharen@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Prateek Agarwal","available":false,"created_at":"2020-08-04T15:00:38.000Z","language":"en-US","id":444292,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/444292","email":"agarwal.prateek8@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Dipika Vijaykumar","available":false,"created_at":"2020-08-12T08:33:01.000Z","language":"en-US","id":447300,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/447300","email":"dipikasankar21@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Nur Sener","available":false,"created_at":"2020-09-14T16:10:38.000Z","language":"en-US","id":460532,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/460532","email":"nrsener@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Angel Martin Paz","available":false,"created_at":"2020-11-12T11:38:02.000Z","language":"en-US","id":497117,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/497117","email":"contedalmamelone@gmail.com"},{"availability_status":"custom","wrap_up_time":0,"name":"Slim Zouari","available":false,"created_at":"2020-11-27T10:39:19.000Z","language":"en-US","id":506852,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/506852","email":"slim.zouari@outlook.com"},{"availability_status":"available","wrap_up_time":0,"name":"Pablo Lloret Roig","available":false,"created_at":"2020-12-15T00:48:19.000Z","language":"en-US","id":517551,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/517551","email":"yeticanin@hotmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Tatiana Arpintin","available":false,"created_at":"2020-12-15T13:46:57.000Z","language":"en-US","id":517769,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/517769","email":"tatyarpintin@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Alejandro Sanchez Ballester","available":false,"created_at":"2020-12-15T14:03:42.000Z","language":"en-US","id":517777,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/517777","email":"aplierxo@hotmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Roberto Carballo","available":false,"created_at":"2021-01-06T17:17:41.000Z","language":"en-US","id":525014,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/525014","email":"rbcarballo@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Remzi ER","available":false,"created_at":"2021-02-01T09:24:50.000Z","language":"en-US","id":539731,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/539731","email":"remzier4233@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Samuel De la cruz lopez","available":false,"created_at":"2021-02-01T09:29:38.000Z","language":"en-US","id":539734,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/539734","email":"samudelacruz@gmail.com"},{"availability_status":"available","wrap_up_time":0,"name":"Martin Svach","available":false,"created_at":"2021-02-15T13:20:36.000Z","language":"en-US","id":548912,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/548912","email":"kwakic@gmail.com"}]}
+20:06:42.110 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:42.139 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.aircall.io/v1/users
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 81
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+{"last_name":"San Miguel","first_name":"Benjamin","email":"benjamin@aircall.com"}
+
+20:06:43.039 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 898
+1 < 400
+1 < Date: Sun, 18 Jul 2021 18:06:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Cache-Control: no-cache
+1 < X-Request-Id: b885bcb1-5a67-43df-a584-7c0def36e693
+1 < X-Runtime: 0.020109
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"troubleshoot":"A user has already been created with this email","error":"Bad request"}
+20:06:43.046 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:43.048 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.aircall.io/v1/users
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+{"last_name":"SanMiguel","first_name":"Benjamin","email":"aircatrwqell@qwdes.aircall"}
+
+20:06:44.606 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 1555
+1 < 201
+1 < Date: Sun, 18 Jul 2021 18:06:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < ETag: W/"02373ed1eb15f741b544fbe39a992514"
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < X-Request-Id: af7cf859-00fe-4b59-9e24-2f07a68ab578
+1 < X-Runtime: 0.737288
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"user":{"availability_status":"available","wrap_up_time":0,"name":"Benjamin SanMiguel","available":false,"numbers":[],"created_at":"2021-07-18T18:06:44.000Z","language":"en-US","id":620739,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/620739","email":"aircatrwqell@qwdes.aircall"}}
+20:06:44.619 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+2 > PUT https://api.aircall.io/v1/users/620739
+2 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 28
+2 > Host: api.aircall.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 > Accept-Encoding: gzip,deflate
+{"first_name":"Ben Updated"}
+
+20:06:45.571 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 949
+2 < 200
+2 < Date: Sun, 18 Jul 2021 18:06:45 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Server: nginx
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-XSS-Protection: 1; mode=block
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < ETag: W/"eb3bcda1fba304ff7c06ccd11c4e2cd7"
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < X-Request-Id: 7896ae20-a795-4103-8da0-4ef876e9876f
+2 < X-Runtime: 0.125754
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 < Vary: Origin
+{"user":{"availability_status":"available","wrap_up_time":0,"name":"Ben Updated SanMiguel","available":false,"numbers":[],"created_at":"2021-07-18T18:06:44.000Z","language":"en-US","id":620739,"time_zone":"Etc\/UTC","direct_link":"https:\/\/api.aircall.io\/v1\/users\/620739","email":"aircatrwqell@qwdes.aircall"}}
+20:06:45.575 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.aircall.io/v1/users/620739
+3 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+3 > Host: api.aircall.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+3 > Accept-Encoding: gzip,deflate
+
+
+20:06:46.695 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 1118
+3 < 204
+3 < Date: Sun, 18 Jul 2021 18:06:46 GMT
+3 < Connection: keep-alive
+3 < Server: nginx
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-XSS-Protection: 1; mode=block
+3 < X-Content-Type-Options: nosniff
+3 < X-Download-Options: noopen
+3 < X-Permitted-Cross-Domain-Policies: none
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Cache-Control: no-cache
+3 < X-Request-Id: 863a6b9d-087e-4154-ad31-06e5da252382
+3 < X-Runtime: 0.307421
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+3 < Vary: Origin
+
+20:06:46.703 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:46.706 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET https://api.aircall.io/v1/users/availabilities
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:06:47.472 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 765
+1 < 200
+1 < Date: Sun, 18 Jul 2021 18:06:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < ETag: W/"3df7dcdf0b64906b9782e0c28f13c2ad"
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < X-Request-Id: 51649c28-a4ce-4661-a5e4-22c25f64a257
+1 < X-Runtime: 0.036350
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"meta":{"per_page":20,"total":109,"previous_page_link":null,"count":20,"current_page":1,"next_page_link":"https:\/\/api.aircall.io\/v1\/users\/availabilities?order=asc&page=2&per_page=20"},"users":[{"availability":"offline","id":290082},{"availability":"offline","id":347585},{"availability":"offline","id":373675},{"availability":"offline","id":404602},{"availability":"offline","id":413614},{"availability":"offline","id":437138},{"availability":"offline","id":438830},{"availability":"offline","id":441719},{"availability":"offline","id":444292},{"availability":"offline","id":447300},{"availability":"offline","id":460532},{"availability":"offline","id":497117},{"availability":"offline","id":506852},{"availability":"offline","id":517551},{"availability":"offline","id":517769},{"availability":"offline","id":517777},{"availability":"offline","id":525014},{"availability":"offline","id":539731},{"availability":"offline","id":539734},{"availability":"offline","id":548912}]}
+20:06:47.487 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:47.490 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.aircall.io/v1/users/620665/calls
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+{"number_id":null,"to":"+33652556756"}
+
+20:06:48.333 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 840
+1 < 400
+1 < Date: Sun, 18 Jul 2021 18:06:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Cache-Control: no-cache
+1 < X-Request-Id: dc69d9e3-f419-4df5-b973-0f6e4cc8e9f8
+1 < X-Runtime: 0.009243
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"troubleshoot":"You must provide a number_id","error":"Bad request"}
+20:06:48.335 [com.intuit.karate.cli.Main.main()] ERROR com.intuit.karate - src/test/java/tests/users/users.feature:149
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 840, url: https://api.aircall.io/v1/users/620665/calls, response: 
+{"error":"Bad request","troubleshoot":"You must provide a number_id"}
+src/test/java/tests/users/users.feature:149
+20:06:48.339 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+20:06:48.341 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.aircall.io/v1/users/620665/dial
+1 > Authorization: Basic ZGU3NmEzMDE1MWVmYjU0M2YxODYxYWVmYzU5M2NjZTM6YzE3ZTljZDQzMDgxMWI4ZGE3NjI1MDcwMzA0MzIzYWM=
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 21
+1 > Host: api.aircall.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+{"to":"+33652556756"}
+
+20:06:49.230 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 887
+1 < 405
+1 < Date: Sun, 18 Jul 2021 18:06:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: nginx
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Cache-Control: no-cache
+1 < X-Request-Id: 42d64299-e9df-4ac2-ad83-9fef3bbb2b78
+1 < X-Runtime: 0.021630
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Vary: Origin
+{"troubleshoot":"The user is currently unavailable","error":"Method not allowed"}
+20:06:49.233 [com.intuit.karate.cli.Main.main()] ERROR com.intuit.karate - src/test/java/tests/users/users.feature:160
+Then status 204
+status code was: 405, expected: 204, response time in milliseconds: 887, url: https://api.aircall.io/v1/users/620665/dial, response: 
+{"error":"Method not allowed","troubleshoot":"The user is currently unavailable"}
+src/test/java/tests/users/users.feature:160
+20:06:49.626 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/tests/users/users.feature
